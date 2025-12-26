@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Arian Robot - Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Arian</h2>
+        <img src="img/arian.jpeg" alt="Arian Robot Logo">
+        
+        <form action="/login" method="POST">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder=" " required>
+                <label for="username">Usuário</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder=" " required>
+                <label for="password">Senha</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="codigo" name="codigo" placeholder=" " required>
+                <label for="codigo">Código de autenticação</label>
+            </div>
+            <a href="/esqueceu-senha" class="forgot-password">Esqueceu sua senha?</a>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>   
+</body>
+</html>
