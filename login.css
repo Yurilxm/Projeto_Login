@@ -67,22 +67,26 @@ body {
   margin-bottom: 30px;
 }
 
-.login-container input {
-  width: 100%;
-  height: 44px;
-  padding: 0px 16px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 10px;
-  color: #fff;
-  font-size: 14px;
-  line-height: 44px;
+.input-group i{
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    z-index: 2;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.login-container input:focus {
-  outline: none;
-  border-color: #6ea8ff;
-  box-shadow: 0 0 0 2px rgba(110, 168, 255, 0.25);
+.input-group i.active,
+.input-group i:hover {
+    color: #9bb6ff;
+    text-shadow: 0 0 10px rgba(155,182,255,0.6);
+}
+
+.toggle-password {
+    pointer-events: all;
 }
 
 /* Label começa DENTRO */
@@ -105,6 +109,24 @@ body {
   font-size: 13px;
   color: #9bb6ff;
   text-shadow: 0 0 10px rgba(155,182,255,0.6);
+}
+
+.login-container input {
+  width: 100%;
+  height: 44px;
+  padding: 0px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 44px;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #6ea8ff;
+  box-shadow: 0 0 0 2px rgba(110, 168, 255, 0.25);
 }
 
 .forgot-wrapper {
@@ -146,6 +168,8 @@ body {
 .input-group:focus-within .ajuda {
   opacity: 1;
 }
+
+
 
 
 @keyframes flutuar {

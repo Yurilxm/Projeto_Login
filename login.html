@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <script src="script.js" defer></script>
     <title>Arian Robot - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     <div class="login-container">
@@ -15,14 +17,17 @@
             <div class="input-group">
                 <input type="text" id="username" name="username" placeholder=" " required>
                 <label for="username">Usuário</label>
+                <i class="ri-user-fill"></i>
             </div>
             <div class="input-group">
                 <input type="password" id="password" name="password" placeholder=" " required>
                 <label for="password">Senha</label>
+                <i class="ri-eye-off-fill toggle-password" id="togglePassword"></i>
             </div>
             <div class="input-group">
                 <input type="text" id="codigo" name="codigo" placeholder=" " required>
                 <label for="codigo">Código de autenticação</label>
+                <i class="ri-shield-keyhole-fill"></i>
                 <div class="ajuda-container">
                     <small class="ajuda">Caso seja seu primeiro acesso, pode deixar em branco.</small>
                 </div>
