@@ -31,9 +31,23 @@ body {
   margin-bottom: 25px;
   font-weight: bold;
   letter-spacing: 6px;
+  margin-left: -4px;
   color: #6ea8ff;
   text-shadow: 0 0 15px rgba(110,168,255,0.6);
 }
+
+.login-container h2 span {
+  position: relative;
+  top: 10px;
+  animation: bounce 0.7s ease infinite alternate;
+}
+
+h2 span:nth-child(2){animation-delay: 0.1s;}
+h2 span:nth-child(3){animation-delay: 0.2s;}
+h2 span:nth-child(4){animation-delay: 0.3s;}
+h2 span:nth-child(5){animation-delay: 0.4s;}
+h2 span:nth-child(6){animation-delay: 0.5s;}
+
 
 .login-container img {
   display: block;
@@ -175,6 +189,12 @@ body {
 @keyframes flutuar {
   0%, 100% {transform: translateY(0);}
   50% {transform: translateY(-8px);}
+}
+
+@keyframes bounce {
+  100%{
+    top: -10px;
+  }
 }
 
 
