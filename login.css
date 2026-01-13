@@ -11,8 +11,9 @@ body {
   justify-content: center;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top, rgba(40, 60, 120, 0.35), rgba(10, 15, 40, 0.85) 60%), 
-    linear-gradient(180deg, #050814, #02030a);
+  radial-gradient(circle at top, rgba(120, 130, 255, 0.06), rgba(0, 0, 0, 0.9) 65%),
+  linear-gradient(180deg, #0b0f1a, #02030a);
+
   color: #fff;
 }
 
