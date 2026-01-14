@@ -196,20 +196,47 @@ body:not(.light) .login-container button:hover {
   box-shadow: 0 0 0 2px rgba(110, 168, 255, 0.25);
 }
 
-.forgot-wrapper {
-  text-align: right;
-  margin: 20px 0 25px;
+.remember-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 15px;
 }
 
-.forgot-password {
-  display: inline;
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: rgba(200,210,255,0.75);
+}
+
+.remember label {
+  cursor: pointer;
+  transition: color 0.3s, text-shadow 0.3s;
+  margin-bottom: 3px;
+}
+
+.remember:hover label {
+  color: #9bb6ff;
+  text-shadow: 0 0 10px rgba(155,182,255,0.6);
+}
+
+.remember input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #6ea8ff;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.remember-wrapper a{
   font-size: 13px;
   color: rgba(200,210,255,0.75);
   text-decoration: none;
   transition: 0.3s;
 }
 
-.forgot-password:hover {
+.remember-wrapper a:hover {
   color: #9bb6ff;
   text-shadow: 0 0 10px rgba(155,182,255,0.6);
 }
