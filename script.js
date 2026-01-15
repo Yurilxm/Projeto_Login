@@ -14,21 +14,19 @@ toggleButton.addEventListener('click', () => {
 
 
 
-const toggle = document.getElementById('theme-toggle');
+const toggle = document.getElementById('theme-toggle-checkbox');
 const body = document.body;
+const savedTheme = localStorage.getItem('theme');
 
-// Carrega tema salvo
-if (localStorage.getItem('theme') === 'light') {
-body.classList.add('light');
-toggle.textContent = '☀️';
+if (savedTheme) {
+    const checkbox = document.getElementById('theme-toggle-checkbox');
+    checkbox.addEventListener('change', () => {
+        body.classList.toggle('light', checkbox.checked);
+        const isLight = body.classList.contains('light');
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+    body.classList.toggle('light', savedTheme === 'light');
+    checkbox.checked = savedTheme === 'light';
 }
-
-toggle.addEventListener('click', () => {
-body.classList.toggle('light');
-
-const isLight = body.classList.contains('light');
-toggle.textContent = isLight ? '☀️' : '🌙';
-localStorage.setItem('theme', isLight ? 'light' : 'dark');
-});
 
 

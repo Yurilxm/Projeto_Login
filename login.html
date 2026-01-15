@@ -26,7 +26,7 @@
                 <i class="ri-eye-off-fill toggle-password" id="togglePassword"></i>
             </div>
             <div class="input-group">
-                <input type="text" id="codigo" name="codigo" placeholder=" " required>
+                <input type="text" id="codigo" name="codigo" placeholder=" ">
                 <label for="codigo">Código de autenticação</label>
                 <i class="ri-shield-keyhole-fill"></i>
                 <div class="ajuda-container">
@@ -46,10 +46,9 @@
             </div>
         </form>
     </div>
-
-    <button id="theme-toggle" aria-label="Alternar tema">
-        🌙
-    </button>
-
+    <label class="theme-toggle">
+        <input type="checkbox" id="theme-toggle-checkbox">
+        <span class="slider"></span>
+    </label>
 </body>
 </html>
